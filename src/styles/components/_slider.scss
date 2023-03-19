@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+$font-family: 'Oxygen';
+$color-navbar:white; 
+
+.slider_container {
+    position: absolute;
+  left: 28rem;
+  top: 250px;
+  z-index: 10;
+    h1{
+        color: white;
+        font-family: $font-family;
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    button {
+  position: absolute;
+  top: 290px;
+  left: 15rem;
+  text-transform: uppercase;
+  font-family: $font-family;
+  font-size: 15px;
+  letter-spacing: 2pt;
+  color: white;
+  background: transparent;
+  border: 3px solid hwb(0 100% 0%);
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+    }
+
+    button:hover{
+    border: 2px solid hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 0%);
+    background-color: hsl(0, 0%, 100%);
+    }
+
+}
+
+.img {
+    height: 100vh;
+  width: 100%;
+  position: relative;
+}

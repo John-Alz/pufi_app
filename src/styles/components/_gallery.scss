@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+$font-family: 'Oxygen';
+
+.socialmedia_container_instagram {
+    font-family: $font-family;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    p {
+        color: #495057;
+        font-size: 13px;
+    }
+}
+
+.socialmedia_container_spufi {
+    font-family: $font-family;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+
+    h1{
+        font-weight: normal;
+        font-size: 40px;
+    }
+}
+
+// .mosaic_container {
+//     margin: 80px 0 80px 0;
+//     display: flex;
+//     max-width: 1199px;
+//     width: 100%;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     align-items: center;
+//     img {
+//         width: 300px;
+//         height: 200px;
+//         object-fit: cover;
+//         padding: .5px;
+//     }
+
+//     img:hover {
+//         cursor: pointer;
+//         opacity: .5;
+//         transition: 0.5s;
+//     }
+// }
+
+
+.mosaic_container  {
+    margin: 80px 0 80px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    grid-gap: 1px;
+    justify-content: center;
+
+    img {
+        width: 250px;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      img:hover {
+                cursor: pointer;
+                opacity: .5;
+                transition: 0.5s;
+            }
+
+  }
+
+  @media screen and (max-width: 768px) {
+    .mosaic_container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }

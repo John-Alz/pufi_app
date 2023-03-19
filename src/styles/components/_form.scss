@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+$font-family: 'Oxygen';
+
+.container_newsletter {
+    font-family: $font-family;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    p {
+        color: #495057;
+        font-size: 13px;
+    }
+}
+
+.container_suscribe {
+    font-family: $font-family;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+
+    h1{
+        font-weight: 600;
+        font-size: 40px;
+    }
+}
+
+.container_paragrah{
+    font-family: $font-family;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+
+    p{
+        font-weight: bold;
+        font-size: 15px;
+    }
+}
+
+.container_form {
+    margin: 25px 0 100px 0;
+    display: flex;
+    justify-content: center;
+    
+
+    input {
+        padding: 15px;
+        width: 600px;
+    }
+
+    button {
+        background-color: transparent;
+        border: none;
+        margin: 0 -40px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+}
+
+.sent_arrow {
+    font-size: 25px;
+    margin: -8px 0;
+}

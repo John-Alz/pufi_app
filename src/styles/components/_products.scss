@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+$font-family: 'Oxygen';
+
+.product_container {
+    margin: 0;
+    display: flex;
+    
+    .img_umbrella {
+        width: 50%;
+        img {
+            width: 100%;
+            
+        }
+    
+            button {
+                position: absolute;
+                left: 20%;
+                top: 140%;
+                text-transform: uppercase;
+                font-family: $font-family;
+                font-size: 15px;
+                letter-spacing: 2pt;
+                color: white;
+                background: transparent;
+                border: 3px solid hwb(0 100% 0%);
+                padding: 20px 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                }
+
+            button:hover{
+                    border: 2px solid hsl(0, 0%, 100%);
+                    color: hsl(0, 0%, 0%);
+                    background-color: hsl(0, 0%, 100%);
+                    }
+    }
+    .product-description {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
+        font-family: $font-family;
+        font-weight: 600;
+        img {
+            height: 110px;
+            width: 120px;
+            display: block;
+            margin: 0px auto;
+        }
+
+        h1 {
+            margin-top: 3rem;
+        }
+
+        hr {
+            width: 40px;
+            margin: 20px 0 20px 0;
+        }
+
+        p{
+            color: #495057;
+            margin-bottom: 40px;
+        }
+
+        a{
+            color: #6c757d;
+            letter-spacing: 2pt;
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .product_container {
+        .img_umbrella {
+            display: none;
+        }
+        .product-description{
+            width: 100%;
+        }
+    }
+  }

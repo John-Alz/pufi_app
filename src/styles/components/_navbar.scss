@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+$font-family: 'Oxygen';
+$color-navbar:white; 
+
+@mixin border {
+    margin-right: 10px;
+    margin-left: 10px;
+    border-right: 1px solid rgb(255, 255, 255);
+    padding-right: 40px;
+  }
+  
+
+.navbar {
+    font-family: $font-family;
+    font-size: small;
+    font-weight:bolder;
+    color: $color-navbar;
+    margin-top: 20px;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  
+    .logo {
+      margin-left: 2%;
+      margin-top: 1%;
+    }
+  
+    .logo_img {
+      height: 70px;
+      width: 140px;
+    }
+  }
+
+
+  .navigation {
+    display: flex;
+    margin-top: 25px;
+    margin-left: 70px;
+
+    p{
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+
+    .navigation__one {
+      @include border;
+    }
+    .navigation__two {
+      @include border;
+    }
+    .navigation__three {
+      @include border;
+    }
+    .img {
+      width: 35px;
+      height: 40px;
+      padding-bottom: 5px;
+      display: block;
+      margin: 0px auto;
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    font-size: small;
+    margin-right: 20px;
+  
+    span {
+      margin-top: 20px;
+      margin-right: 10px;
+      padding-top: 5px;
+    }
+    .p__miCuanta {
+      padding-top: 7px ;
+      padding-left: 15px ;
+      border-left: 1px solid rgb(255, 255, 255);
+    }
+    .ralla {
+      color: rgb(87, 105, 132);
+    }
+  };
+  

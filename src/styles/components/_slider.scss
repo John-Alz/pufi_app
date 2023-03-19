@@ -45,3 +45,16 @@ $color-navbar:white;
   width: 100%;
   position: relative;
 }
+
+@media screen and (max-width: 768px) {
+  .slider_container {
+    h1{
+      display: none;
+    }
+
+    button {
+      display: none;
+    }
+
+  }
+}

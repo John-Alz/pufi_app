@@ -78,9 +78,22 @@ $color-navbar:white;
       padding-top: 7px ;
       padding-left: 15px ;
       border-left: 1px solid rgb(255, 255, 255);
+      height: 30%;
     }
     .ralla {
       color: rgb(87, 105, 132);
     }
   };
   
+  @media screen and (max-width: 768px) {
+    .navbar {
+      .logo {
+        display: none;
+      }
+
+      .container {
+        display: none;
+      }
+
+    }
+  }

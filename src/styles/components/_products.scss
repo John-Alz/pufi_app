@@ -103,3 +103,14 @@ $font-family: 'Oxygen';
     }
 }
   }
+
+  @media screen and (max-width: 1200px) {
+   
+        .product-description{
+            hr {
+                display: none;
+            }
+        }
+    
+
+  }

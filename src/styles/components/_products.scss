@@ -68,7 +68,7 @@ $font-family: 'Oxygen';
 
         hr {
             width: 40px;
-            margin: 20px 0 20px 0;
+            margin: 20px 0 20px 360px;
         }
 
         p{
@@ -96,6 +96,9 @@ $font-family: 'Oxygen';
             margin-left: 100px;
         .product-description{
             width: 100%;
+            hr {
+                display: none;
+            }
         }
     }
 }

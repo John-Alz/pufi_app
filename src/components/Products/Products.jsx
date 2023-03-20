@@ -1,12 +1,4 @@
 import React from 'react'
-import umbrella from '../../assets/umbrella.jpeg'
-import umbrella2 from '../../assets/umbrella_product.jpg'
-import puff_product from '../../assets/puff_product4.jpg'
-import puff from '../../assets/puff_2_2.jpg'
-import cart from '../../assets/cart2_2.jpg'
-import cart_product from '../../assets/cart_product2.jpg'
-import nap from '../../assets/napppp.jpg'
-import nap_1 from '../../assets/nap_1_1.jpg'
 import { FiChevronRight} from "react-icons/fi";
 
 import { useSelector } from 'react-redux'

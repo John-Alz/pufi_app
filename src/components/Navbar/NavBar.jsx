@@ -5,8 +5,14 @@ import rain from '../../assets/rain.png'
 import cart from '../../assets/cart.png'
 import nap from '../../assets/nap.png'
 import { FiChevronDown} from "react-icons/fi";
+import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 export default function Navbar() {
+
+
+  const { totalCount } = useSelector(state => state.cart)
+
   return (
     <div className='navbar'>
       <div className='logo'>
@@ -31,10 +37,14 @@ export default function Navbar() {
         <p>PUFI NAP</p>
         </div>
       </div>
-      <div className='container'>
+      <div className='container_cuenta'>
         {/*profile*/}
         <span>MI CUENTA   <FiChevronDown style={{color: "white", fontSize: 15, }}/></span> 
-        <span className='p__miCuanta'>MI COMPRA</span> 
+        
+        <span className='miCuenta'><Link className='link_compra' to='/cart'>MI COMPRA</Link></span> 
+        <span className='count'>{totalCount === 0 ? "" : totalCount}</span>
+        
+        
       </div>
     </div>
   )

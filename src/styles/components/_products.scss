@@ -8,16 +8,19 @@ $font-family: 'Oxygen';
         flex-direction: row;
     }
     
-    .img_umbrella {
+    .container_product{
         width: 50%;
+        position: relative;
+        display: block;
         img {
             width: 100%;
             
         }
             button {
                 position: absolute;
-                left: 20%;
-                top: 140%;
+                top: 40%;
+                left: 35%;
+                // transform: translateX(-50%);
                 text-transform: uppercase;
                 font-family: $font-family;
                 font-size: 15px;
@@ -87,7 +90,7 @@ $font-family: 'Oxygen';
 
 @media screen and (max-width: 748px) {
     .product_container {
-        .img_umbrella {
+        .container_product {
             display: none;
         }
         .container_description{
@@ -101,6 +104,7 @@ $font-family: 'Oxygen';
             }
         }
     }
+
 }
   }
 

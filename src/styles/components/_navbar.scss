@@ -87,13 +87,8 @@ $color-navbar:white;
   
   @media screen and (max-width: 768px) {
     .navbar {
-      .logo {
+      .navigation {
         display: none;
       }
-
-      .container {
-        display: none;
-      }
-
     }
   }

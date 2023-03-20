@@ -2,8 +2,11 @@
 $font-family: 'Oxygen';
 
 .product_container {
-    margin: 0;
-    display: flex;
+    width: 100%;
+    .product {
+        display: flex;
+        flex-direction: row;
+    }
     
     .img_umbrella {
         width: 50%;
@@ -11,7 +14,6 @@ $font-family: 'Oxygen';
             width: 100%;
             
         }
-    
             button {
                 position: absolute;
                 left: 20%;
@@ -36,14 +38,22 @@ $font-family: 'Oxygen';
                     background-color: hsl(0, 0%, 100%);
                     }
     }
-    .product-description {
+
+    .container_description{
         width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    .product-description {
+        width: 100%;
         display: flex;
         justify-content: center;
         align-content: center;
         flex-direction: column;
         text-align: center;
         font-family: $font-family;
+        
         // font-weight: 600;
         img {
             height: 110px;
@@ -73,14 +83,20 @@ $font-family: 'Oxygen';
         }
     }
 }
+}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 748px) {
     .product_container {
         .img_umbrella {
             display: none;
         }
+        .container_description{
+            width: 50%;
+            margin-top: 130px;
+            margin-left: 100px;
         .product-description{
             width: 100%;
         }
     }
+}
   }

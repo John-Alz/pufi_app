@@ -9,61 +9,59 @@ import nap from '../../assets/napppp.jpg'
 import nap_1 from '../../assets/nap_1_1.jpg'
 import { FiChevronRight} from "react-icons/fi";
 
+import { useSelector } from 'react-redux'
+
+
 export default function Products() {
+
+  const { products } = useSelector(state => state.products)
+
+
+  console.log(products);
+
   return (
-    <div> 
-      <div className='product_container'>
-      <div className='img_umbrella'>
-      <img  src={umbrella} alt='PUFI PUFF'/>
-      <button>SHOP</button>
-      </div>
-      <div className='product-description'>
-      <img  src={umbrella2} alt='PUFI PUFF'/>
-      <h1>Pufi RAIN</h1>
-      <hr/>
-      <p>Descripción del producto. Este es <br/> un texto simulado</p>
-      <a><FiChevronRight/> VER MAS</a>
-      </div>
-      </div>
-      <div className='product_container'>
-      <div className='product-description'>
-      <img  src={puff_product} alt='PUFI PUFF'/>
-      <h1>Pufi PUFF</h1>
-      <hr/>
-      <p>Descripción del producto. Este es <br/> un texto simulado</p>
-      <a><FiChevronRight/> VER MAS</a>
-      </div>
-      <div className='img_umbrella'>
-      <img  src={puff} alt='PUFI PUFF'/>
-      <button>SHOP</button>
-      </div>
-      </div>
-      <div className='product_container'>
-      <div className='img_umbrella'>
-      <img  src={cart} alt='PUFI PUFF'/>
-      <button>SHOP</button>
-      </div>
-      <div className='product-description'>
-      <img  src={cart_product} alt='PUFI PUFF'/>
-      <h1>Pufi RAIN</h1>
-      <hr/>
-      <p>Descripción del producto. Este es <br/> un texto simulado</p>
-      <a><FiChevronRight/>  VER MAS</a>
-      </div>
-      </div>
-      <div className='product_container'>
-      <div className='product-description'>
-      <img  src={nap} alt='PUFI PUFF'/>
-      <h1>Pufi PUFF</h1>
-      <hr/>
-      <p>Descripción del producto. Este es <br/> un texto simulado</p>
-      <a><FiChevronRight/>  VER MAS</a>
-      </div>
-      <div className='img_umbrella'>
-      <img  src={nap_1} alt='PUFI PUFF'/>
-      <button>SHOP</button>
-      </div>
-      </div>
+    <div className='product_container'> 
+    {
+        products.map((product, index) => {
+          if(index%2 !== 0) {
+            return (
+              <div key={product.id} className="product">
+                <Detail product={product.product} name={product.name} />
+                <Imagen img={product.img} name={product.name}/>
+              </div>
+            )
+          }
+          return <div key={product.id} className="product">
+            <Imagen img={product.img} name={product.name} />
+            <Detail product={product.product} name={product.name} />
+          </div>
+        })
+      }
+      
     </div>
   )
 }
+
+const Imagen = ({img, name}) => {
+  return (
+  <div className='img_umbrella'>
+  <img  src={img} alt={name}/>
+  <button>SHOP</button>
+  </div>
+  )
+}
+const Detail = ({product, name}) => {
+  return (
+    <div className='container_description'>
+    <div className='product-description'>
+    <img  src={product} alt='PUFI PUFF'/>
+    <h1>{name}</h1>
+    <hr/>
+    <p>Descripción del producto. Este es <br/> un texto simulado</p>
+    <a><FiChevronRight/> VER MAS</a>
+    </div>
+    </div>
+  )
+
+  }
+

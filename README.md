@@ -1,7 +1,9 @@
 # Pufi app
 
  ## tecnoligas usadas: 
- - JavaScript, React, Redux, sass
+ - JavaScript, React, Redux, sas
+   - react router dom.
+   - Redux toolkit
 
  ## Este proyecto contiene:
  
@@ -38,3 +40,8 @@
 # Footer
 ![](https://i.postimg.cc/PrKrj0Zy/Pufi-App-footer.png)
 
+# Carrito de comprar
+![](https://i.postimg.cc/9MttFWcz/Pufi-App-cart.png)
+
+# Vista detalle del producto
+![](https://i.postimg.cc/prWQmgdC/Pufi-App-detail-Product.png)

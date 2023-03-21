@@ -28,10 +28,14 @@ export default function Cart() {
                             <p>{product.name}</p>
                             <span>{product.description}</span>
                             <button onClick={() => handleRemoveProduct(product.id)} >Borrar</button>
+    
                         </div>
                     )
                 }): <div><h2>No tienes productos en el carrito. <br/> Ve a para comprar <br/> <Link className='link_buy' to='/'>Haz click aqui.</Link> <br/> ❤️</h2></div>
             } 
+            <div className={productsList.length > 0 ? "term_compra" : "not_term_compra"} >
+            <button>Terminar compra</button>
+            </div>
       </div>
     </div>
   )

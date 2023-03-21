@@ -16,6 +16,6 @@
    - Boton para agregar o remover de carrito.
    - Boton para regresar a la pagina de inicio
  #### Página del carrito de compras
-   - Lista de productos agregados.
+   - Lista de productos agregados con sus respectiva información.
    - Bonton para eliminar productos del carrito.
    - Boton para regresar a la pagina de inicio.

@@ -100,22 +100,10 @@ $font-family: 'Oxygen';
             margin-left: 100px;
         .product-description{
             width: 100%;
-            hr {
-                display: none;
-            }
+            
         }
     }
 
 }
   }
 
-  @media screen and (max-width: 1200px) {
-   
-        .product-description{
-            hr {
-                display: none;
-            }
-        }
-    
-
-  }

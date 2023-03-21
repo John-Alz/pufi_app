@@ -2,7 +2,7 @@
 
  ## tecnoligas usadas: 
  - JavaScript, React, Redux, sas
-   - react router dom.
+   - React router dom.
    - Redux toolkit
 
  ## Este proyecto contiene:

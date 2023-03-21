@@ -39,7 +39,7 @@ export default function Slider() {
         <button>SHOP</button>
       </div>
       <SwiperSlide><img className='img' src={carousel2} alt='PUFI PUFF' /></SwiperSlide>
-      <SwiperSlide><img className='img' src={carrousel_3_3} alt='PUFI PUFF' /></SwiperSlide>
+      {/* <SwiperSlide><img className='img' src={carrousel_3_3} alt='PUFI PUFF' /></SwiperSlide> */}
       <SwiperSlide><img className='img' src={carrusel1} alt='PUFI PUFF' /></SwiperSlide>
         
       </Swiper>

@@ -131,6 +131,10 @@ footer{
     margin-left: 2rem;
   }
 
+  .icons {
+    align-self: center;
+  }
+
 }
 
 

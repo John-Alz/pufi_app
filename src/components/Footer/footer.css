@@ -141,6 +141,10 @@ footer{
     align-self: center;
   }
 
+  .link-des{
+    border: 0;
+  }
+
   .newsletter_row {
     border: 0;
   }

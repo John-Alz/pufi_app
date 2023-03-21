@@ -12,6 +12,7 @@
  #### página de detalle del producto.
    - Imagen de producto.
    - Nombre del producto.
+   - Descripción del producto.
    - Boton para agregar o remover de carrito.
    - Boton para regresar a la pagina de inicio
  #### Página del carrito de compras

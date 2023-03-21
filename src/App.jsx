@@ -27,7 +27,7 @@ import nap_1 from './assets/nap_1_1.jpg'
 import { useDispatch } from 'react-redux'
 
 import { setInitialProducts } from './reducers/products/productsSlice.js'
-import Cart from './Pages/cart/cart'
+import CartPage from './Pages/cart/cart'
 // import { addProductToCart } from './reducers/cart/cartSlice'
 
 
@@ -72,7 +72,6 @@ function App() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(setInitialProducts(products))
-    // dispatch(setInitialDetail(products))
   }, []);
 
 
@@ -80,7 +79,7 @@ function App() {
     <div className="App">
     <Routes>
       <Route path='/' element={<Home/>}/>
-      <Route path='/cart' element={<Cart/>}/>
+      <Route path='/cart' element={<CartPage/>}/>
       <Route path="/detail/:id" element={<ProductsDetail/>}/>
     </Routes>
     </div>

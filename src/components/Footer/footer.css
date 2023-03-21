@@ -119,6 +119,20 @@ footer{
   
 }
 
+@media screen and (max-width: 1024px) {
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-header img {
+    margin-left: 2rem;
+  }
+
+}
+
 
 
 
@@ -158,3 +172,5 @@ hr{
 .copyright p{
   padding: 20px;
 }
+
+

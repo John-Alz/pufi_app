@@ -27,7 +27,7 @@ import nap_1 from './assets/nap_1_1.jpg'
 import { useDispatch } from 'react-redux'
 
 import { setInitialProducts } from './reducers/products/productsSlice.js'
-import CartPage from './Pages/cart/cart'
+import CartPage from './Pages/CartPage/Cart'
 // import { addProductToCart } from './reducers/cart/cartSlice'
 
 

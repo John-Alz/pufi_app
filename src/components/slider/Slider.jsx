@@ -1,10 +1,8 @@
 
 import React from "react";
 import carrusel1 from '../../assets/carrusel1.jpg'
-import carousel1 from '../../assets/Carousel1.jpg'
-import carousel2 from '../../assets/Carousel2.jpg'
+import carousel2 from '../../assets/carousel2.jpg'
 import carrousel_3_3 from '../../assets/carrousel_3_3.jpg'
-import sofa from '../../assets/sofa-aire.jpg'
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";

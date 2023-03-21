@@ -1,6 +1,7 @@
 import {useEffect} from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Home from './Pages/Home/Home'
+import CartPage from './Pages/CartPage/Cart'
 
 import ProductsDetail from './Pages/ProductDetail/ProductsDetail'
 
@@ -27,7 +28,7 @@ import nap_1 from './assets/nap_1_1.jpg'
 import { useDispatch } from 'react-redux'
 
 import { setInitialProducts } from './reducers/products/productsSlice.js'
-import CartPage from './Pages/CartPage/Cart'
+
 // import { addProductToCart } from './reducers/cart/cartSlice'
 
 

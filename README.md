@@ -25,10 +25,10 @@
    - Bonton para eliminar productos del carrito.
    - Boton para regresar a la pagina de inicio.
 
-# Home page
+# Pagina de inicio
 ![](https://i.postimg.cc/VN0YX6hZ/Pufi-App-home.png)
 
-# Card Product
+# Tarjeta del producto
 ![](https://i.postimg.cc/1txyBShm/Pufi-App-card.png)
 
 # Mosaico instagran

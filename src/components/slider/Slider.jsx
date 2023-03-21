@@ -36,7 +36,7 @@ export default function Slider() {
       >
       <div className="slider_container">
       <h1>ESTÁR CÓMODO <br/> NUNCA FUE TAN FÁCIL.</h1>
-      <button>SHOP</button>
+        <button>SHOP</button>
       </div>
       <SwiperSlide><img className='img' src={carousel2} alt='PUFI PUFF' /></SwiperSlide>
       <SwiperSlide><img className='img' src={carrousel_3_3} alt='PUFI PUFF' /></SwiperSlide>

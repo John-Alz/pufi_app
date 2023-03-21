@@ -3,43 +3,48 @@ $font-family: 'Oxygen';
 $color-navbar:white; 
 
 .slider_container {
-    position: absolute;
-  left: 28rem;
-  top: 250px;
-  z-index: 10;
-    h1{
-        color: white;
-        font-family: $font-family;
-        font-size: 4rem;
-        text-align: center;
-    }
-
-    button {
   position: absolute;
-  top: 290px;
-  left: 15rem;
-  text-transform: uppercase;
-  font-family: $font-family;
-  font-size: 15px;
-  letter-spacing: 2pt;
-  color: white;
-  background: transparent;
-  border: 3px solid hwb(0 100% 0%);
-  padding: 20px 50px;
+  left: 0;
+  right: 0;
+  top: 5%;
+  bottom: 0;
+  z-index: 10;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  cursor: pointer;
-    }
+  align-items: center;
 
-    button:hover{
-    border: 2px solid hsl(0, 0%, 100%);
-    color: hsl(0, 0%, 0%);
-    background-color: hsl(0, 0%, 100%);
-    }
+  h1 {
+    color: white;
+    font-family: $font-family;
+    font-size: 4rem;
+    text-align: center;
+    margin: 0;
+  }
 
-}
+  button {
+    margin-top: 140px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $font-family;
+    font-size: 15px;
+    letter-spacing: 2pt;
+    color: white;
+    background: transparent;
+    border: 3px solid hwb(0 100% 0%);
+    padding: 20px 50px;
+    cursor: pointer;
+      }
+  
+      button:hover{
+      border: 2px solid hsl(0, 0%, 100%);
+      color: hsl(0, 0%, 0%);
+      background-color: hsl(0, 0%, 100%);
+      }
+  }
 
+
+    
 .img {
     height: 100vh;
   width: 100%;

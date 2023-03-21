@@ -41,7 +41,7 @@ export default function Products() {
     }
   }
 
-  const productChange = productsList.find(product => product.id === product.id) ? "Remove" : "Shop"
+  // const productChange = productsList.find(product => product.id === product.id) 
 
   const handleProductClick = (productId) => {
     dispatch(setSelectProductId(productId))
@@ -58,12 +58,12 @@ export default function Products() {
             return (
               <div key={product.id} className="product">
                 <Detail product={product.product} name={product.name} id={product.id} click={() => handleProductClick(product.id)} />
-                <Imagen img={product.img} name={product.name} onClick={() => handleAddOrRemoveProduct(product.id)} value={productChange}/>
+                <Imagen img={product.img} name={product.name} onClick={() => handleAddOrRemoveProduct(product.id)} value={productsList.find(pdt => pdt.id === product.id) ? "Remove" : "Shop"}/>
               </div>
             )
           }
           return <div key={product.id} className="product">
-            <Imagen img={product.img} name={product.name} onClick={() => handleAddOrRemoveProduct(product.id)} value={productChange}/>
+            <Imagen img={product.img} name={product.name} onClick={() => handleAddOrRemoveProduct(product.id)} value={productsList.find(pdt => pdt.id === product.id) ? "Remove" : "Shop"}/>
             <Detail product={product.product} name={product.name} id={product.id} click={() => handleProductClick(product.id)}/>
           </div>
         })
@@ -80,7 +80,7 @@ const Imagen = ({img, name, onClick, value}) => {
   <button
    onClick={onClick}>
     {
-      value
+      value 
     }
    </button>
   </div>

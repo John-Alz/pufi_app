@@ -57,7 +57,7 @@ export default function Footer() {
       
       
       
-      <div className="newsletter row">
+      <div className="newsletter_row">
         <div className="footer-header">
           <h3>Newsletter</h3>
         </div>

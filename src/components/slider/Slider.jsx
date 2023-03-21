@@ -15,7 +15,7 @@ import "swiper/css/pagination";
 // import "./styles.css";
 
 // import required modules
-import { Pagination, Autoplay, Navigation } from "swiper";
+import { Pagination, Navigation } from "swiper";
 
 export default function Slider() {
   return (
@@ -23,15 +23,12 @@ export default function Slider() {
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
-        }}
+        
         pagination={{
           clickable: true,
         }}
         navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[ Pagination, Navigation]}
         className="mySwiper"
       >
       <div className="slider_container">

@@ -110,6 +110,7 @@ footer{
   display: flex;
   flex-direction: column;
   gap:10px;
+  border-left: 2px solid #ced4da;
 }
 .link-des a{
     color: #000;
@@ -117,6 +118,11 @@ footer{
   font-size: 12px;
   font-weight: bold;
   
+}
+
+.newsletter_row {
+  border-left: 2px solid #ced4da;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -133,6 +139,10 @@ footer{
 
   .icons {
     align-self: center;
+  }
+
+  .newsletter_row {
+    border: 0;
   }
 
 }

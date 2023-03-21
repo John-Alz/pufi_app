@@ -16,7 +16,7 @@ export default function Form() {
     Swal.fire({
       position: 'center',
       icon: 'success',
-      title: 'Thanks for joining!',
+      title: '¡Gracias por suscribirte!',
       showConfirmButton: false,
       color: '#000',
       background: '#fff;',

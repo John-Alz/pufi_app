@@ -44,15 +44,15 @@ export default function ProductDetail() {
 
 
   return (
-    <div className='bodyDog'>
-      <div className='dogdetail'>
-      <Link className='linkDet' to='/'>X</Link>
+    <div className='body_detail'>
+      <div className='dog_detail'>
+      <Link className='linkDet' to='/'>Volver</Link>
       {product && (
         <>
-        <div>
+        <div className='left'>
         <img src={product.product} alt={product.name} />
        </div>
-        <div>
+        <div className='right'>
           <h1>{product.name}</h1>
           <p>{product.description_2}</p>
           <button onClick={() => handleAddOrRemoveProduct(product.id)}>

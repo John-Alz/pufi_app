@@ -110,6 +110,11 @@ $font-family: 'Oxygen';
 }
 
 @media screen and (max-width: 1050px) {
+
+    .container_cart {
+        width: 80%;
+        margin-left: 10%;
+    }
     .container_product {
         img {
             display: none;

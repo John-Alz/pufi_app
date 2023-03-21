@@ -3,7 +3,8 @@ import React from "react";
 import carrusel1 from '../../assets/carrusel1.jpg'
 import carousel1 from '../../assets/Carousel1.jpg'
 import carousel2 from '../../assets/Carousel2.jpg'
-import carousel4 from '../../assets/Carousel4.jpg'
+import carrousel_3_3 from '../../assets/carrousel_3_3.jpg'
+import sofa from '../../assets/sofa-aire.jpg'
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -16,19 +17,33 @@ import "swiper/css/pagination";
 // import "./styles.css";
 
 // import required modules
-import { Pagination } from "swiper";
+import { Pagination, Autoplay, Navigation } from "swiper";
 
 export default function Slider() {
   return (
     <>
-      <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
       <div className="slider_container">
       <h1>ESTÁR CÓMODO <br/> NUNCA FUE TAN FÁCIL.</h1>
       <button>SHOP</button>
       </div>
       <SwiperSlide><img className='img' src={carousel2} alt='PUFI PUFF' /></SwiperSlide>
+      <SwiperSlide><img className='img' src={carrousel_3_3} alt='PUFI PUFF' /></SwiperSlide>
       <SwiperSlide><img className='img' src={carrusel1} alt='PUFI PUFF' /></SwiperSlide>
-        <SwiperSlide><img className='img' src={carousel1} alt='PUFI PUFF' /></SwiperSlide>
+        
       </Swiper>
     </>
   );

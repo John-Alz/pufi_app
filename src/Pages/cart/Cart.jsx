@@ -23,8 +23,8 @@ export default function Cart() {
         productsList.length > 0 ?
                 productsList.map(product => {
                     return (
-                        <div className='container_product'>
-                            <img src={product.product}/>
+                        <div className='container_product_cart'>
+                            <img className='img_cart' src={product.product}/>
                             <p>{product.name}</p>
                             <span>{product.description}</span>
                             <button onClick={() => handleRemoveProduct(product.id)} >Borrar</button>

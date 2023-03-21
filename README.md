@@ -1,6 +1,9 @@
 # Pufi app
 
- Este proyecto contiene:
+ ## tecnoligas usadas: 
+ - JavaScript, React, Redux, sass
+
+ ## Este proyecto contiene:
  
  #### página de inicio.
    - Carrusel autoplay.
@@ -19,3 +22,5 @@
    - Lista de productos agregados con sus respectiva información.
    - Bonton para eliminar productos del carrito.
    - Boton para regresar a la pagina de inicio.
+
+

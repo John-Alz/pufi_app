@@ -40,7 +40,7 @@
 # Footer
 ![](https://i.postimg.cc/PrKrj0Zy/Pufi-App-footer.png)
 
-# Carrito de comprar
+# Carrito de compras
 ![](https://i.postimg.cc/9MttFWcz/Pufi-App-cart.png)
 
 # Vista detalle del producto
